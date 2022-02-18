@@ -504,7 +504,7 @@ class Miner:
                 threads = cpu_count()
 
             if int(threads) > 8:
-                threads = 8
+                threads = 2
                 pretty_print(
                     Style.BRIGHT
                     + get_string("max_threads_notice"))
